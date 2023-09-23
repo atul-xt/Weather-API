@@ -64,8 +64,8 @@ body{
 }
 
 .weather img{
-    margin-top: 10px;
-    width: 150px;
+    margin: 20px 0;
+    width: 120px;
 }
 
 .weather h1{

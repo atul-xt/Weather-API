@@ -40,6 +40,8 @@ async function checkWeather(city) {
             icon.src = "./img/rain.png"
         } else if (data.weather[0].main == "Snow") {
             icon.src = "./img/snow.png"
+        } else if (data.weather[0].main == "Haze") {
+            icon.src = "./img/haze.png"
         }
         
         error.style.display = "none";
