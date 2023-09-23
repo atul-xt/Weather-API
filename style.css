@@ -17,7 +17,7 @@ body{
 }
 
 .card{
-    width: 100%;
+    width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #32e7ff, #5100ff);
     color: #fff;
@@ -40,7 +40,7 @@ body{
     color: #555;
     padding: 10px 20px;
     height: 45px;
-    width: 80%;
+    width: 90%;
     border-radius: 30px;
     margin-right: 10px;
     font-size: 14px;
@@ -51,7 +51,7 @@ body{
     border: 0;
     outline: 0;
     border-radius: 50%;
-    width: 45px;
+    width: 46px;
     height: 45px;
     cursor: pointer;
     display: flex;
@@ -118,6 +118,18 @@ body{
     margin-left: 25px;
     font-size: 14px;
     display: none;
+}
+
+@media (max-width: 500px) {
+    .search input{
+        width: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    .search input{
+        width: 80%;
+    }
 }
 
 @media (max-width: 300px) {
