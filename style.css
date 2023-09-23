@@ -17,7 +17,7 @@ body{
 }
 
 .card{
-    width: 90%;
+    width: 100%;
     max-width: 470px;
     background: linear-gradient(135deg, #32e7ff, #5100ff);
     color: #fff;
@@ -38,11 +38,11 @@ body{
     border: 0;
     outline: 0;
     color: #555;
-    padding: 10px 15px;
+    padding: 10px 10px;
     height: 45px;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
+    margin-right: 5px;
     font-size: 14px;
     font-weight: 400;
 }
