@@ -7,6 +7,7 @@ const btn = document.querySelector("#btn");
 const weather = document.querySelector(".weather");
 const error = document.querySelector(".error");
 
+
 btn.addEventListener("click", function () {
     let city = input.value;
     checkWeather(city);
@@ -43,5 +44,33 @@ async function checkWeather(city) {
         
         error.style.display = "none";
         weather.style.display = "block";
+
+        var tl = gsap.timeline();
+
+        tl.from(".weather-icon", {
+            opacity: 0,
+            scale: .8,
+            duration: 2,
+            ease: "Expo.easeInOut"
+        },'-=.5')
+        tl.from("#temp",{
+            y: -50,
+            opacity: 0,
+            duration: 1,
+            ease: "Expo.easeInOut"
+        },'-=1.5')
+        tl.from("#city",{
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "Expo.easeInOut"
+        },'-=1.5')
+        tl.from(".col",{
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "Expo.easeInOut"
+        },'-=1.5')
+        
     }
 }
